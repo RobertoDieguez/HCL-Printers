@@ -18,8 +18,6 @@ export default function App() {
       />
       <Alert variant="danger">
         If the printer you need is down please go and connect an ethernet cable.{" "}
-        <b>Phaser 8560</b> and <b>WorkCentre 3335</b> are not avaible at this
-        moment
       </Alert>
       <Tabs id="main_menu" activeKey={key} onSelect={k => setKey(k)}>
         <Tab eventKey="printers" title={<b>PRINTERS</b>}>

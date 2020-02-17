@@ -147,7 +147,15 @@ export default props => {
       />
 
       <DropdownForm
-        label="Connectivity to DDCL"
+        label={
+          <a
+            href="https://xapp2.support.xerox.com/DDCL/DeviceEvent/LoginS3.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connectivity to DDCL
+          </a>
+        }
         menu={["Didn't check", "Yes", "No"]}
         change={value => setData({ ...data, ddcl: value })}
         value={data.ddcl}
